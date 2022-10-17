@@ -6,24 +6,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>mip-NeRF 360</title>
+    <title>CATs++</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:image" content="https://jonbarron.info/mipnerf360/img/gardenvase.jpg">
+    <!-- <meta property="og:image" content="https://jonbarron.info/mipnerf360/img/gardenvase.jpg">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1296">
-    <meta property="og:image:height" content="840">
+    <meta property="og:image:height" content="840"> -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://jonbarron.info/mipnerf360/"/>
-    <meta property="og:title" content="Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields" />
-    <meta property="og:description" content="Though neural radiance fields (NeRF) have demonstrated impressive view synthesis results on objects and small bounded regions of space, they struggle on 'unbounded' scenes, where the camera may point in any direction and content may exist at any distance. In this setting, existing NeRF-like models often produce blurry or low-resolution renderings (due to the unbalanced detail and scale of nearby and distant objects), are slow to train, and may exhibit artifacts due to the inherent ambiguity of the task of reconstructing a large scene from a small set of images. We present an extension of mip-NeRF (a NeRF variant that addresses sampling and aliasing) that uses a non-linear scene parameterization, online distillation, and a novel distortion-based regularizer to overcome the challenges presented by unbounded scenes. Our model, which we dub 'mip-NeRF 360' as we target scenes in which the camera rotates 360 degrees around a point, reduces mean-squared error by 54% compared to mip-NeRF, and is able to produce realistic synthesized views and detailed depth maps for highly intricate, unbounded real-world scenes." />
+    <meta property="og:url" content="https://ku-cvlab.github.io/CATs-PlusPlus-Project-Page/"/>
+    <meta property="og:title" content="CATs++: Boosting Cost Aggregation with Convolutions and Transformers" />
+    <meta property="og:description" content="Cost aggregation is a process in image matching tasks that aims to disambiguate the noisy matching scores. Existing methods generally tackle this by hand-crafted or CNN-based methods, which either lack robustness to severe deformations or inherit the limitation of CNNs that fail to discriminate incorrect matches due to limited receptive fields and inadaptability. In this paper, we introduce Cost Aggregation with Transformers (CATs) to tackle this by exploring global consensus among initial correlation map with the help of some architectural designs that allow us to benefit from global receptive fields of self-attention mechanism. To this end, we include appearance affinity modeling, which helps to disambiguate the noisy initial correlation maps. Furthermore, we introduce some techniques, including multi-level aggregation to exploit rich semantics prevalent at different feature levels and swapping self-attention to obtain reciprocal matching scores to act as a regularization. Although CATs can attain competitive performance, it may face some limitations, \textit{i.e.}, high computational costs, which may restrict its applicability only at limited resolution and hurt performance. To overcome this, we propose CATs++, an extension of CATs. Concretely, we introduce early convolutions prior to cost aggregation with a transformer to control the number of tokens and inject some convolutional inductive bias, then propose a novel transformer architecture for both efficient and effective cost aggregation, which results in apparent performance boost and cost reduction. With the reduced costs, we are able to compose our network with a hierarchical structure to process higher-resolution inputs.  We show that the proposed method with these integrated outperforms the previous state-of-the-art methods by large margins." />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields" />
-    <meta name="twitter:description" content="Though neural radiance fields (NeRF) have demonstrated impressive view synthesis results on objects and small bounded regions of space, they struggle on 'unbounded' scenes, where the camera may point in any direction and content may exist at any distance. In this setting, existing NeRF-like models often produce blurry or low-resolution renderings (due to the unbalanced detail and scale of nearby and distant objects), are slow to train, and may exhibit artifacts due to the inherent ambiguity of the task of reconstructing a large scene from a small set of images. We present an extension of mip-NeRF (a NeRF variant that addresses sampling and aliasing) that uses a non-linear scene parameterization, online distillation, and a novel distortion-based regularizer to overcome the challenges presented by unbounded scenes. Our model, which we dub 'mip-NeRF 360' as we target scenes in which the camera rotates 360 degrees around a point, reduces mean-squared error by 54% compared to mip-NeRF, and is able to produce realistic synthesized views and detailed depth maps for highly intricate, unbounded real-world scenes." />
-    <meta name="twitter:image" content="https://jonbarron.info/mipnerf360/img/gardenvase.jpg" />
+    <meta name="twitter:title" content="CATs++: Boosting Cost Aggregation with Convolutions and Transformers" />
+    <meta name="twitter:description" content="Cost aggregation is a process in image matching tasks that aims to disambiguate the noisy matching scores. Existing methods generally tackle this by hand-crafted or CNN-based methods, which either lack robustness to severe deformations or inherit the limitation of CNNs that fail to discriminate incorrect matches due to limited receptive fields and inadaptability. In this paper, we introduce Cost Aggregation with Transformers (CATs) to tackle this by exploring global consensus among initial correlation map with the help of some architectural designs that allow us to benefit from global receptive fields of self-attention mechanism. To this end, we include appearance affinity modeling, which helps to disambiguate the noisy initial correlation maps. Furthermore, we introduce some techniques, including multi-level aggregation to exploit rich semantics prevalent at different feature levels and swapping self-attention to obtain reciprocal matching scores to act as a regularization. Although CATs can attain competitive performance, it may face some limitations, \textit{i.e.}, high computational costs, which may restrict its applicability only at limited resolution and hurt performance. To overcome this, we propose CATs++, an extension of CATs. Concretely, we introduce early convolutions prior to cost aggregation with a transformer to control the number of tokens and inject some convolutional inductive bias, then propose a novel transformer architecture for both efficient and effective cost aggregation, which results in apparent performance boost and cost reduction. With the reduced costs, we are able to compose our network with a hierarchical structure to process higher-resolution inputs.  We show that the proposed method with these integrated outperforms the previous state-of-the-art methods by large margins." />
+    <!-- <meta name="twitter:image" content="https://jonbarron.info/mipnerf360/img/gardenvase.jpg" /> -->
 
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💫</text></svg>">
@@ -106,13 +106,16 @@
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <img class="col-md-4" src="img/figure1_cats.png" width="50%"><img class="col-md-4" src="img/figure1_catspp.png" width="50%">
+                <div class="text-center">
+                    <img width="40%" src="img/figure1_cats.png">
+                    <img width="40%" src="img/figure1_catspp.png">
+                </div>
 			</div>
             <div class="col-md-8 col-md-offset-2">
 							<p class="text-center">
 							Comparison between CATs (left) and CATs++ (right).
 							</p>
-						</div>
+            </div>
         </div>
 
 
@@ -149,8 +152,8 @@
                             </div>
                 <div class="col-md-8 col-md-offset-2">
                                 <p class="text-center">
-                                    Intuition of the proposed components: (left) standard transformer-based aggregator (in CATs), (right) efficient transformer-based
-                                    aggregator (in CATs++). 
+                                    Intuition of the proposed components: <br>(left) efficient transformer-based
+                                    aggregator (in CATs++), <br>(right) standard transformer-based aggregator (in CATs).
                                 </p>
                             </div>
             </div>
